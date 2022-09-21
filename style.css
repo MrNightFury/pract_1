@@ -28,6 +28,7 @@ header {
 	font-family: 'Playfair Display', serif;
 	color: #4d2a18;
     width: 50%;
+    height: auto;
 }
 
 .topmenu {
@@ -36,6 +37,7 @@ header {
     position: absolute;
     top: 60px;
     width: 50%;
+    height: auto;
 }
 
 .topmenu > ul > li {

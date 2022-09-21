@@ -62,16 +62,21 @@ main {
     background-color: #f6ecda;
 }
 
-aside {
-    position: fixed;
-    left: 85%;
-    margin-top: 1%;
-    width: 13%;
-    background-color: wheat;
-    border-color: #4d2a18;
-    border-style: solid;
-    border-radius: 5px;
+
+@media screen and (min-width: 600px) {
+    aside {
+        position: fixed;
+        left: 85%;
+        margin-top: 1%;
+        width: 13%;
+        background-color: wheat;
+        border-color: #4d2a18;
+        border-style: solid;
+        border-radius: 5px;
+    }
 }
+
+
 
 .submenu {
     background: #f6ecda;

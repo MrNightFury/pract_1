@@ -111,6 +111,9 @@ address {
     aside {
     visibility: hidden;
     }
+    .icon {
+        width: 10%;
+    }
     main {
         margin: 1%;
     }

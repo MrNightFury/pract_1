@@ -101,8 +101,8 @@ aside {
     background-color: aliceblue;
 }
 
-.topmenu > ul > li:active {
-    background-color: red;
+.topmenu > ul > li > a:active {
+    background-color: yellow;
 }
 
 .topmenu > ul > li:hover .submenu {

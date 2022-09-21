@@ -109,7 +109,7 @@ address {
 
 @media screen and (max-width: 600px) {
     aside {
-    visibility: hidden;
+        visibility: hidden;
     }
     .icon {
         width: 10%;

@@ -63,20 +63,22 @@ main {
 }
 
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
     aside {
-        position: fixed;
-        left: 85%;
-        margin-top: 1%;
-        width: 13%;
-        background-color: wheat;
-        border-color: #4d2a18;
-        border-style: solid;
-        border-radius: 5px;
+    visibility: hidden;
     }
 }
 
-
+aside {
+    position: fixed;
+    left: 85%;
+    margin-top: 1%;
+    width: 13%;
+    background-color: wheat;
+    border-color: #4d2a18;
+    border-style: solid;
+    border-radius: 5px;
+}
 
 .submenu {
     background: #f6ecda;

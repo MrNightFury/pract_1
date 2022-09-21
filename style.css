@@ -40,7 +40,6 @@ header {
 .topmenu > ul > li {
     display: inline-block;
     position: relative;
-    /*background-color: wheat;*/
     margin-left: 0px;
     width: auto;
 }
@@ -51,19 +50,10 @@ header {
     border-radius: 5px;
     width: 100%;
 }
-/*
-font-family: 'Exo 2', sans-serif;
-  font-size: 15px;
-  height: 50px;
-  line-height: 50px;
-  padding: 0 30px;
-  font-weight: bold;
-  color: #003559;
-  text-transform: uppercase;*/
 
 main {
-    margin: 1% 20% 1% 1%;
-    padding: 0px 20px 10px;
+    margin: 1% 15% 1% 1%;
+    padding: 0 1% 1%;
     border-style: dashed;
     border-radius: 2%;
     background-color: #f6ecda;
@@ -71,9 +61,9 @@ main {
 
 aside {
     position: fixed;
-    left: 80%;
+    left: 85%;
     margin-top: 1%;
-    width: 17.5%;
+    width: 13%;
     background-color: wheat;
     border-color: #4d2a18;
     border-style: solid;
@@ -83,18 +73,10 @@ aside {
 .submenu {
     background: #f6ecda;
     visibility: hidden;
-    
     border: 2px solid #003559;
     position: absolute;
     padding-left: 20px;
     width: 83%;
-    /*
-    opacity: 0;
-    z-index: 5;
-    width: 150px;
-    transform: perspective(600px) rotateX(-90deg);
-    transform-origin: 0% 0%;
-    transition: .6s ease-in-out;*/
 }
 
 .topmenu > ul > li > a:hover {
@@ -112,4 +94,12 @@ aside {
 
 .topmenu > ul > li:nth-last-child(-n+2)::before {
     content: "      ";
+}
+
+address {
+    background-color: wheat;
+    border-radius: 25px;
+    border-style: dotted;
+    border-color: black;
+    text-align: center;
 }

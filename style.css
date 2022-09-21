@@ -97,7 +97,7 @@ aside {
     transition: .6s ease-in-out;*/
 }
 
-.topmenu > ul > li:hover {
+.topmenu > ul > li > a:hover {
     background-color: aliceblue;
 }
 

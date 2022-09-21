@@ -62,13 +62,6 @@ main {
     background-color: #f6ecda;
 }
 
-
-@media screen and (max-width: 600px) {
-    aside {
-    visibility: hidden;
-    }
-}
-
 aside {
     position: fixed;
     left: 85%;
@@ -112,4 +105,13 @@ address {
     border-style: dotted;
     border-color: black;
     text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    aside {
+    visibility: hidden;
+    }
+    main {
+        margin: 1%;
+    }
 }

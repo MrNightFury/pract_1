@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+form {
+    background-color: antiquewhite;
+    margin: 2% 10% 2%;
+    padding: 2%;
+    border-color: brown;
+    border-width: 1%;
+    border-style: solid;
+}
+input {
+    background-color: aliceblue;
+    padding: 1%;
+    border-color: black;
+    border-style: dotted;
+}
+input:focus {
+    background-color: wheat;
+}
+textarea {
+    font-family: 'Caveat', cursive;
+}
+textarea::placeholder {
+    color: aqua;
+}

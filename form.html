@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name = "viewport" content = "wight=device-wight, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/form.css">
+        <link rel="icon" type="image/png" href="images/icon.png">
+        <title>Сборник стихов</title>
+    </head>
+    <body>
+        <header>
+            
+            <img class="icon" width="100" alt="Иконка пера" src="images/feather.png">
+            
+            <div class="title">Сборник стихов</div>
+            <nav class="topmenu">
+                <ul>
+                    <li><a href>А.С.Пушкин</a>
+                        <ul class="submenu">
+                            <li><a href="#biography">Биография</a></li>
+                            <li><a href="#lyrics">Стихи</a></li>
+                        </ul>
+                    <li><a href="#lyrics">Стихи</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href></a>
+                    <li><a href></a>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <form method="get">
+                <p>
+                    <label for="name">Введите Имя и Фамилию: </label>
+                    <input type="text" name="name" id="name" pattern="[A-ZА-ЯЁ][a-zа-яё]+ [A-ZА-ЯЁ][a-zа-яё]+" placeholder="Иван Иванов" required>
+                </p>
+                
+                <p>
+                    <label for="password">Пароль: </label>
+                    <input type="password" name="password" id="password" required>
+                </p>
+                <p>
+                    <input type="file" name="file" id="file">
+                </p>
+                <p>
+                    <label for="checkbox">Да?: </label>
+                    <input type="checkbox" name="checkbox" id="checkbox" checked required>
+                </p>
+                <p>
+                    <label for="radio">Радио?: </label>
+                    <input type="radio" name="radio" id="radio" required>
+                    <input type="radio" name="radio" id="radio" required>
+                </p>
+                <p>
+                    <label for="datetime">Датавремя: </label>
+                    <input type="datetime-local" name="datetime" id="datetime" min="01-01-1970" max="01-01-2077" required>
+                </p>
+                <p>
+                    <label for="about">О себе:</label><br>
+                    <textarea id="about" name="about" rows="5" cols="20" minlength="1" maxlength="200" placeholder="Человек" required></textarea>
+                </p>
+                <p>
+                    <label for="submit">Ок: </label>
+                    <input type="submit" name="submit" id="submit" required>
+                </p>
+                <p>
+                    <label for="language">Язык: </label>
+                    <select name="language" id="language" multiple required size="3">
+                        <option value="">--Выберите язык--</option>
+                        <option value="russian">Русский</option>
+                        <option value="english">Английский</option>
+                        <option value="elvish">Эльфийский</option>
+                    </select>
+                </p>
+                <fieldset>
+                    <legend>Контакты</legend>
+                    <p>
+                        <label>Телефон: <input type="tel" name="tel" id="tel" required></label>
+                    </p>
+                    <p>
+                        <label for="email">email: </label>
+                        <input type="email" name="email" id="email" required>
+                    </p>
+                </fieldset>
+                
+            </form>
+            <p>
+                <button name="button">
+                    <strong>Just</strong> a button
+                </button>
+            </p>
+        </main>
+        
+        <footer>
+            <address>
+                <a href="tel:78005553535">Телефон</a>
+                <a href="mailto:doluppautikoi-4172@yopmail.com">Почта</a>   
+            </address>
+        </footer>
+    </body>
+</html>

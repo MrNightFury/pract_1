@@ -10,7 +10,8 @@ form {
 }
 input {
     background-color: aliceblue;
-    padding: 1%;
+    padding: 1% 2% 1%;
+    margin: 2%;
     border-color: black;
     border-style: dotted;
 }

@@ -7,7 +7,6 @@ main {
     flex-direction: row;
     flex-wrap:wrap;
     justify-content: flex-start;
-    
 }
 
 header {
@@ -45,7 +44,6 @@ a {
 	font-family: 'Playfair Display', serif;
     color: #4d2a18;
 }
-
 
 .topmenu {
     display: inline-block;
@@ -125,8 +123,6 @@ address {
     border-color: black;
     text-align: center;
 }
-
-
 
 .menu-button-container {
     position: absolute;

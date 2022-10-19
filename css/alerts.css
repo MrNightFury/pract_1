@@ -1,16 +1,81 @@
 .alert-container {
     position: fixed;
     right: 0;
-    margin: .5%;
+    bottom: 0;
+    margin: 1%;
+    background-color: white;
+    border-radius: 1.75em;
+    margin: 1em;
+    height: 3.5em;
+    width: 3.5em;
+    transition: height 1s .5s, width .5s;
+}
+.alert-bell {
+    content: ' ';
+    width: 2.5em;
+    height: 2.5em;
+    margin: .5em;
+}
+.alert-head {
+    width: 100%;
+    height: 3.5em;
     background-color: wheat;
+    border-radius: 1.75em;
+}
+.alert-count {
+    margin: 0;
+    position: absolute;
+    top: -.3em;
+    right: -.2em;
+    background-color: rgb(255, 0, 85);
+    width: 1.25em;
+    height: 1.25em;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+}
+
+.alert-list {
+    display:none;
+    flex-direction: column;
+    background-color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.alert-list > li {
+    margin: .0em 0 0 0;
+    overflow-wrap: break-word;
+    padding: .75em 0 .75em 0;
+}
+.alert-list > li::before {
+    content: counter(list-item);
+    margin: 1em;
+    padding: .5em .8em;
+    background-color: wheat;
+    border-radius: 2em;
+}
+.alert-list > li:first-child {
+    margin-top: .5em;
 }
 
 
-    /*
-    margin-top: 1%;
-    width: 13%;
+.alert-container:hover > .alert-head {
+    border-radius: 1.75em 1.75em 0 0;
+}
+.alert-container:hover {
+    width: 15em;
+    height: 20em;
+}
+.alert-container:hover > ul {
+    display: flex;
+}
+
+.alert-list > li:hover {
+    border-radius: 1em;
     background-color: wheat;
-    border-color: #4d2a18;
-    border-style: solid;
-    border-radius: 5px;
-    overflow-wrap: break-word;*/
+    transform: scale(1.1);
+}
+.alert-list > li:hover::before {
+    background-color: white;
+}

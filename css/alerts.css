@@ -1,0 +1,16 @@
+.alert-container {
+    position: fixed;
+    right: 0;
+    margin: .5%;
+    background-color: wheat;
+}
+
+
+    /*
+    margin-top: 1%;
+    width: 13%;
+    background-color: wheat;
+    border-color: #4d2a18;
+    border-style: solid;
+    border-radius: 5px;
+    overflow-wrap: break-word;*/

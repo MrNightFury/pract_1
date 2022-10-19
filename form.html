@@ -11,31 +11,27 @@
     </head>
     <body>
         <header>
-            
             <img class="icon" width="100" alt="Иконка пера" src="images/feather.png">
-            
             <div class="title">Сборник стихов</div>
+
+            <input id="menu-toggle" type="checkbox">
+            <label for="menu-toggle" class="menu-button-container">
+                <div class="menu-button"></div>
+            </label>
+
             <nav class="topmenu">
                 <ul>
-                    <li><a href="index.html">А.С.Пушкин</a>
+                    <li><a href>А.С.Пушкин</a>
                         <ul class="submenu">
-                            <li><a href="index#biography">Биография</a></li>
-                            <li><a href="index#lyrics">Стихи</a></li>
+                            <li><a href="#biography">Биография</a></li>
+                            <li><a href="#lyrics">Стихи</a></li>
                         </ul>
-                    <li><a href="#lyrics">Форма</a></li>
+                    <li><a href="form.html">Форма</a>
                     <li><a href="galery.html">Галерея</a></li>
+                    <li><a href="animations.html">Анимации</a></li>
                 </ul>
             </nav>
         </header>
-
-        <aside>
-            <nav>
-                <ul>
-                    <li><a href></a>
-                    <li><a href></a>
-                </ul>
-            </nav>
-        </aside>
 
         <main>
             <form method="get">
@@ -94,6 +90,7 @@
                 
             </form>
             <p>
+                <label for="button">a</label>
                 <button name="button">
                     <strong>Just</strong> a button
                 </button>

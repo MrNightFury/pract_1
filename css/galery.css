@@ -1,7 +1,5 @@
-.galery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 1em;
+main {
+    justify-content: space-around;
 }
 
 .image {
@@ -10,18 +8,16 @@
     align-items: center;
     justify-content: center;
     z-index: 0;
+    width: auto;
+    height: 20em;
 }
 .image > img {
-    width: 100%;
-}
-.image:hover > img {
-    filter: blur(2px);
-    z-index: 1;
+    height: 20em
 }
 
-.image > p {
+.image > div {
     opacity: 0;
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: bold;
     z-index: 1;
     position: absolute;
@@ -29,21 +25,31 @@
     width: 100%;
     top: 0;
     left: 0;
-    color: white;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items: right;
+    justify-content: flex-end;
+    transition: opacity 1s;
+    color: white;
+}
+.image-title {
+    font-size: large;
+    font-weight: bold;
+}
+.image-description > button {
+    width: 20%;
+    margin: 1em;
+    font-weight: bold;
+}
+.image-description > p {
+    margin: 0 0 0 1em;
 }
 
-.image:hover > p {
+.image:hover > div {
     opacity: 1;
+    box-shadow: 0 -10em 10em -2em green inset;
 }
 
-@media (hover: none) {
-    .location-title {
-        opacity: 1;
-    }
-    .location-image img {
-        filter: blur(2px);
-    }
+.image:hover > img {
+    z-index: 1;
 }

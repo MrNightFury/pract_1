@@ -186,7 +186,7 @@ address {
     header {
         height: 60px;
     }
-    .side-menu {
+    aside {
         visibility: hidden;
     }
     .menu-button {

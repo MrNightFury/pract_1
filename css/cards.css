@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap');
+main {
+    background: #474747;
+}
+
+.card-container-1 {
+    margin: 3em 0 2em 0;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card-box-1 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 15em;
+    width: 12em;
+}
+
+.card-box-1::before,
+.card-box-1::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 20%;
+    transform: skewX(15deg);
+    transition: 1s;
+    border-radius: 5px;
+}
+.card-box-1::before {
+    filter: blur(20px);
+}
+.card-box-1::after {
+    background: #ffffff;
+    z-index: 0;
+}
+
+.card-box-1 > div {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    position: absolute;
+    background: rgb(128 128 128 / .5);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: auto;
+    top: 30%;
+    left: 0;
+    border-radius: 10px;
+    z-index: 10;
+}
+.card-box-1 > div > * {
+    color: white;
+    padding: 0;
+    margin: .25em .25em .25em .5em;
+}
+.card-box-1 > div > button {
+    color: black;
+    border-radius: 5px;
+    border-style: none;
+    width: 50%;
+}
+
+.card-box-1 > span::before,
+.card-box-1 > span::after{
+    position: absolute;
+    top: 5em;
+    left: 3em;
+    content: '';
+    width: 4em;
+    height: 4em;
+    background: rgb(196 196 196 / .3);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    z-index: 5;
+    animation: card-1 4s ease-in-out infinite;
+    transition: .5s;
+    opacity: 0;
+}
+
+.card-box-1:hover > span::before {
+    opacity: 1;
+    top: -1.5em;
+    left: 1.5em;
+}
+.card-box-1:hover > span::after {
+    opacity: 1;
+    top: calc(100% - 3.5em);
+    left: calc(100% - 6em);
+}
+
+.card-box-1:nth-child(1)::before, 
+.card-box-1:nth-child(1)::after{
+    background: linear-gradient(-15deg, red, orange);
+}
+.card-box-1:nth-child(2)::before, 
+.card-box-1:nth-child(2)::after{
+    background: linear-gradient(-15deg, blue, aliceblue);
+}
+.card-box-1:nth-child(3)::before, 
+.card-box-1:nth-child(3)::after{
+    background: linear-gradient(-15deg, green, yellow);
+}
+
+.card-box-1:hover::before,
+.card-box-1:hover::after{
+    transform: skewX(0);
+}
+
+@keyframes card-1 {
+    0%, 100% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translate(-10px);
+    }
+}
+
+.card-container-2 {
+    margin: 3em 0 2em 0;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card-box-2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 15em;
+    width: 12em;
+    background: white;
+    text-align: center;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.card-box-2 > h2 {
+    color: white;
+    padding: .5em 0 0 0;
+    margin: 0;
+    height: 2em;
+    font-size: 3em;
+    clip-path: circle(2.5em at center 0);
+    background: black;
+    border-radius: 10px;
+    background: var(--color);
+}
+
+.card-box-2:nth-child(1) {
+    --color: #ffa000;
+}
+.card-box-2:nth-child(2) {
+    --color: #ff0063;
+}
+.card-box-2:nth-child(3) {
+    --color: #c200c2;
+}
+
+.card-box-2 > div > button {
+    background: var(--color);
+    border-style: none;
+    padding: .5em;
+    border-radius: 2em;
+    color: white;
+}
+
+.card-container-2:hover > .card-box-2 {
+    filter: blur(5px);
+    opacity: .75;
+    transform: scale(1);
+}
+
+.card-container-2 > .card-box-2:hover {
+    filter: blur(0);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.card-container-3 {
+    margin: 3em 0 2em 0;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card-box-3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    height: 15em;
+    width: 12em;
+    background: linear-gradient(to right, #382b59 50%, #2a1a52 50%);
+    text-align: center;
+    transition: .5s;
+    color: white;
+    overflow: hidden;
+    opacity: .8;
+}
+
+.card-box-3 > p {
+    font-family: 'Fira Sans', sans-serif;
+    color: #4a4aff52;
+    position: absolute;
+    font-size: 3em;
+    right: .5em;
+    top: .5em;
+    transition: .5s;
+}
+
+.card-box-3 > div {
+    z-index: 5;
+}
+
+.card-box-3 > .span-left {
+    position: absolute;
+    top: 100%;
+    background: linear-gradient(#0075ff, #0075ff00);
+    height: 10em;
+    width: 2px;
+}
+.card-box-3 > .span-up {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    background: linear-gradient(to right, #0075ff00, #0075ff);
+    height: 2px;
+    width: 10em;
+}
+.card-box-3 > .span-right {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    background: linear-gradient(#0075ff00, #0075ff);
+    height: 10em;
+    width: 2px;
+}
+.card-box-3 > .span-down {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    background: linear-gradient(to right, #0075ff, #0075ff00);
+    height: 2px;
+    width: 10em;
+}
+
+
+.card-container-3:hover > .card-box-3 {
+    opacity: .3;
+}
+.card-container-3 > .card-box-3:hover {
+    opacity: 1;
+    filter: brightness(1.2);
+}
+.card-box-3:hover > p {
+    top: -.75em;
+}
+.card-box-3:hover > .span-left {
+    animation: span-left 2s infinite linear;
+}
+.card-box-3:hover > .span-up {
+    animation: span-up 2s infinite linear;
+}
+.card-box-3:hover > .span-right {
+    animation: span-right 2s infinite linear;
+}
+.card-box-3:hover > .span-down {
+    animation: span-down 2s infinite linear;
+}
+
+
+
+@keyframes span-left {
+    92%, 100% {
+        top: -10em;
+    }
+}
+@keyframes span-up {
+    0% {
+        right: 0;
+    }
+    55% {
+        right: -10em;
+    }
+    55.1% {
+        right: 100%;
+    }
+    100% {
+        right: 0;
+    }
+}
+@keyframes span-right {
+    92%, 100% {
+        bottom: -10em;
+    }
+}
+@keyframes span-down {
+    0% {
+        left: 0;
+    }
+    55% {
+        left: -10em;
+    }
+    55.1% {
+        left: 100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+/*speed = 0,27  */

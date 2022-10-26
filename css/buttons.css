@@ -1,4 +1,4 @@
-button {
+#button-container > button {
     color: white;
     font-size: large;
     margin-top: 2%;

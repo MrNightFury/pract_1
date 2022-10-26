@@ -11,7 +11,7 @@
     </head>
     <body>
         <header>
-            <img class="icon" width="100" alt="Иконка пера" src="images/feather.png">
+            <img class="icon" width="100" alt="Иконка пера" src="images/icons/feather.png">
             <div class="title">Сборник стихов</div>
 
             <input id="menu-toggle" type="checkbox">
@@ -34,67 +34,22 @@
         </header>
 
         <main>
-            <form method="get">
-                <p>
-                    <label for="name">Введите Имя и Фамилию: </label>
-                    <input type="text" name="name" id="name" pattern="[A-ZА-ЯЁ][a-zа-яё]+ [A-ZА-ЯЁ][a-zа-яё]+" placeholder="Иван Иванов" required>
-                </p>
-                
-                <p>
-                    <label for="password">Пароль: </label>
-                    <input type="password" name="password" id="password" required>
-                </p>
-                <p>
-                    <input type="file" name="file" id="file">
-                </p>
-                <p>
-                    <label for="checkbox">Да?: </label>
-                    <input type="checkbox" name="checkbox" id="checkbox" checked required>
-                </p>
-                <p>
-                    <label for="radio">Что?: </label>
-                    <input type="radio" name="radio" id="first" required>
-                    <input type="radio" name="radio" id="second" required>
-                </p>
-                <p>
-                    <label for="datetime">Датавремя: </label>
-                    <input type="datetime-local" name="datetime" id="datetime" min="01-01-1970" max="01-01-2077" required>
-                </p>
-                <p>
-                    <label for="about">О себе:</label><br>
-                    <textarea id="about" name="about" rows="5" cols="20" minlength="1" maxlength="200" placeholder="Человек" required></textarea>
-                </p>
-                <p>
-                    <label for="submit">Ок: </label>
-                    <input type="submit" name="submit" id="submit" required>
-                </p>
-                <p>
-                    <label for="language">Язык: </label>
-                    <select name="language" id="language" multiple required size="3">
-                        <option value="">--Выберите язык--</option>
-                        <option value="russian">Русский</option>
-                        <option value="english">Английский</option>
-                        <option value="elvish">Эльфийский</option>
-                    </select>
-                </p>
-                <fieldset>
-                    <legend>Контакты</legend>
-                    <p>
-                        <label>Телефон: <input type="tel" name="tel" id="tel" required></label>
-                    </p>
-                    <p>
-                        <label for="email">email: </label>
-                        <input type="email" name="email" id="email" required>
-                    </p>
-                </fieldset>
-                
-            </form>
-            <p>
-                <label for="button">a</label>
-                <button name="button">
-                    <strong>Just</strong> a button
-                </button>
-            </p>
+            <div class="login-form-container">
+                <span id="span-1"></span>
+                <span id="span-2"></span>
+                <div class="login-form">
+                    <h2>Логин</h2>
+                <form method="get">
+                    
+                    <input type="text" placeholder="Почта" required>
+                    <input type="password" placeholder="Пароль" required>
+                    <button type="submit" required>Войти</button>
+                </form>
+                <p>Забыли пароль? <a>Перейти</a></p>
+                <p>Ещё нет аккаунта? <a>Зарегестрироваться</a></p>
+                </div>
+            </div>
+            
         </main>
         
         <footer>

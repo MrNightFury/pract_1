@@ -1,0 +1,32 @@
+.share-container > button {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: grey
+}
+.share-container > button::before {
+    content: '';
+    position: absolute;
+    top: -34px;
+    left: -2px;
+    background: linear-gradient(#00fff3, #00c900);;
+    width: 32px;
+    height: 32px;
+    z-index: 10;
+    transition: top 1s;
+}
+
+.share-container > button:hover::before {
+    top: -2px;
+}
+
+.share-container > button > img {
+    filter: invert(100%);
+    position: absolute;
+    top: 2px;
+    left: 1px;
+    z-index: 10;
+    height: 24px;
+}

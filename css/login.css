@@ -1,0 +1,119 @@
+main {
+    background: #2c2c2c;
+    height: 40em;
+    align-content: center;
+    justify-content: center;
+}
+
+.login-form a {
+    text-decoration: none;
+    color: #ffa700;
+}
+
+.login-form > p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.login-form > h2 {
+    text-decoration: underline;
+}
+
+.login-form {
+    padding: 2em;
+    background: rgb(126 126 126 / 30%);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    display: flex;
+    width: 16em;
+    flex-direction: column;
+    color: white;
+}
+.login-form > form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form > form > input {
+    background: #ffffff73;
+    color: white;
+    box-shadow: 1px 1px 4px black;
+    margin: .5em 0 .5em 0;
+    padding: .5em 0 .5em 1em;
+    border-radius: 2em;
+    border-style: none;
+}
+
+.login-form > form > input::placeholder {
+    color: #d4d4d4;
+}
+
+.login-form > form > button {
+    margin: 1em 0 1em 0;
+    width: 30%;
+    padding: .5em;
+    border-radius: 2em;
+    border-style: none;
+    box-shadow: 1px 1px 4px black;
+}
+
+.login-form-container > span {
+    position: absolute;
+}
+
+.login-form-container > span::before,
+.login-form-container > span::after {
+    position: absolute;
+    content: ' ';
+    background: rgb(128 128 128 / .5);
+    border-radius: 20%;
+    backdrop-filter: blur(10px);
+}
+.login-form-container > span::before {
+    width: 3em;
+    height: 3em;
+}
+.login-form-container > span::after {
+    width: 6em;
+    height: 6em;
+}
+#span-1::after {
+    top: 4em;
+    left: -7em;
+    z-index: 1;
+    animation: spans 10s alternate infinite ease-in-out;
+}
+#span-1::before {
+    top: -5em;
+    left: 5em;
+    animation: spans 10s alternate-reverse infinite ease-in-out;
+}
+#span-2::after {
+    left: 18em;
+    top: -3em;
+    animation: spans 10s alternate infinite ease-in-out -5s;
+}
+#span-2::before {
+    top: 18.5em;
+    left: 5em;
+    z-index: 1;
+    animation: spans 10s alternate-reverse infinite ease-in-out -5s;
+}
+
+@keyframes spans {
+    0% {
+        transform: translate(0, 0);
+    }
+    20% {
+        transform: translate(10px, 20px);
+    }
+    60% {
+        transform: translate(-10px, 15px);
+    }
+    75% {
+        transform: translate(-15px, 5px);
+    }
+    100% {
+        transform: translate(-5px, -5px);
+    }
+}

@@ -5,7 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name = "viewport" content = "wight=device-wight, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/form.css">
+        <link rel="stylesheet" href="css/share.css">
         <link rel="icon" type="image/png" href="images/icon.png">
         <title>Сборник стихов</title>
     </head>
@@ -19,44 +21,105 @@
                 <div class="menu-button"></div>
             </label>
 
-            <nav class="topmenu">
-                <ul>
-                    <li><a href="index.html">А.С.Пушкин</a>
-                        <ul class="submenu">
-                            <li><a href="#biography">Биография</a></li>
-                            <li><a href="#lyrics">Стихи</a></li>
-                        </ul>
-                    <li><a href="form.html">Форма</a>
-                    <li><a href="galery.html">Галерея</a></li>
-                    <li><a href="animations.html">Анимации</a></li>
-                </ul>
-            </nav>
+            
         </header>
+        <nav class="topmenu">
+            <ul>
+                <li><a href="index.html">А.С.Пушкин</a>
+                    <ul class="submenu">
+                        <li><a href="#biography">Биография</a></li>
+                        <li><a href="#lyrics">Стихи</a></li>
+                    </ul>
+                <li><a href="form.html">Форма</a>
+                <li><a href="galery.html">Галерея</a></li>
+                <li><a href="animations.html">Анимации</a></li>
+            </ul>
+        </nav>
 
         <main>
-            <div class="login-form-container">
-                <span id="span-1"></span>
-                <span id="span-2"></span>
-                <div class="login-form">
-                    <h2>Логин</h2>
-                <form method="get">
-                    
-                    <input type="text" placeholder="Почта" required>
-                    <input type="password" placeholder="Пароль" required>
-                    <button type="submit" required>Войти</button>
-                </form>
-                <p>Забыли пароль? <a>Перейти</a></p>
-                <p>Ещё нет аккаунта? <a>Зарегестрироваться</a></p>
+            <p class="form-title">Contact</p>
+            <form id="contact-form">
+                <div id="name">
+                    <input type="text" id="name" required>
+                    <span class="label">Имя</span>
+                    <span class="line"></span>
                 </div>
-            </div>
+                <div id="surname">
+                    <input type="text" id="surname" required>
+                    <span class="label">Фамилия</span>
+                    <span class="line"></span>
+                </div>
+                <div id="mail">
+                    <input type="email" id="mail" required>
+                    <span class="label">Почта</span>
+                    <span class="line"></span>
+                </div>
+                <div id="tel">
+                    <input type="tel" id="tel" required>
+                    <span class="label">Телефон</span>
+                    <span class="line"></span>
+                </div>
+                <div id="message">
+                    <textarea id="message" required></textarea>
+                    <span class="label">Напишите Ваше сообщение здесь</span>
+                    <span class="line"></span>
+                </div>
+                
+                <button type="submit" required>Отправить</button>
+            </form>
             
         </main>
         
         <footer>
-            <address>
-                <a href="tel:78005553535">Телефон</a>
-                <a href="mailto:doluppautikoi-4172@yopmail.com">Почта</a>   
-            </address>
+            <div class="footer-grid">
+                <div class="about-us">
+                    <h2>О нас</h2>
+                    <div class="footer-line"></div>
+                    <p>Некоторый текст, описывающий сайт и компанию.</p>
+                    <div class="share-container">
+                        <button class="share-1"><img src="images/icons/telegram.png" alt="tg"></button>
+                        <button class="share-2"></button>
+                        <button class="share-3"></button>
+                        <button class="share-4"></button>
+                        <button class="share-5"></button>
+                    </div>
+                </div>
+                <div class="quick-links">
+                    <h2>Quick links</h2>
+                    <div class="footer-line"></div>
+                    <ul>
+                        <li><a href>Ссылка</a></li>
+                        <li><a href>Ссылка</a></li>
+                        <li><a href>Ссылка</a></li>
+                        <li><a href>Ссылка</a></li>
+                        <li><a href>Ссылка</a></li>
+                        <li><a href>Ссылка</a></li>
+                    </ul>
+                </div>
+                <div class="shop">
+                    <h2>Shop</h2>
+                    <div class="footer-line"></div>
+                    <ul>
+                        <li><a href>Ссылка</a></li>
+                        <li><a href>Ссылка</a></li>
+                        <li><a href>Ссылка</a></li>
+                        <li><a href>Ссылка</a></li>
+                        <li><a href>Ссылка</a></li>
+                        <li><a href>Ссылка</a></li>
+                    </ul>
+                </div>
+                <div class="contact-us">
+                    <h2>Contact us</h2>
+                    <div class="footer-line"></div>
+                    <address>
+                        <ul>
+                            <li><a href="tel:78005553535">Телефон</a></li>
+                            <li><a href="mailto:doluppautikoi-4172@yopmail.com">Почта</a></li>
+                        </ul>
+                    </address>
+                </div>
+            </div>
+            <div class="copyright">Копирайт</div>
         </footer>
     </body>
 </html>

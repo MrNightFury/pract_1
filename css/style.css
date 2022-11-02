@@ -1,23 +1,40 @@
 body {
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 4em auto auto auto;
+    grid-template-areas: 
+        "header header header"
+        "sidebar navigation ads"
+        "sidebar main ads"
+        "footer footer footer";
     background-color: #4d2a18;
+    gap: 10px;
+    align-items: start;
 }
 
 main {
+/*     width: 100%; */
+    grid-area: main;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+/*     margin: 1% 15% 1% 15%; */
+    padding: 0 1% 1%;
+    border-style: dashed;
+    border-radius: 10px;
+    background-color: #f6ecda;
 }
 
 header {
+    grid-area: header;
     background-color: wheat;
     border-radius: 20px;
     border-style: dotted;
     border-color: black;
-    height: 80px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    height: 4em; 
+/*     position: sticky; */
+    position: relative;  
 }
 
 a {
@@ -46,12 +63,14 @@ a {
 }
 
 .topmenu {
+    grid-area: navigation;
     display: inline-block;
-    position: absolute;
-    width: 100%;
-    top: 40%;
     text-align: center;
     height: auto;
+    background: wheat;
+    border-color: #4d2a18;
+    border-style: solid;
+    border-radius: 10px;
 }
 
 .topmenu > ul {
@@ -73,23 +92,16 @@ a {
     width: 100%;
 }
 
-main {
-    margin: 1% 15% 1% 15%;
-    padding: 0 1% 1%;
-    border-style: dashed;
-    border-radius: 10px;
-    background-color: #f6ecda;
-}
-
 .side-menu {
-    position: fixed;
+    grid-area: sidebar;
+/*     position: fixed; */
     left: 85%;
-    margin-top: 1%;
-    width: 13%;
+/*     margin-top: 1%; */
+/*     width: 13%; */
     background-color: wheat;
     border-color: #4d2a18;
     border-style: solid;
-    border-radius: 5px;
+    border-radius: 10px;
     overflow-wrap: break-word;
 }
 
@@ -117,6 +129,7 @@ main {
 }
 
 footer {
+    grid-area: footer;
     background-color: wheat;
     border-radius: 25px;
     border-style: dotted;
@@ -180,24 +193,45 @@ footer {
     transform: rotate(-405deg);
     background-color: red;
 }
+
+.ads {
+    grid-area: ads;
+    background: wheat;
+    border-color: #4d2a18;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+/*         display: grid; */
+        grid-template-columns: 10% 1fr;
+/*         grid-template-rows: 4em auto auto 10%; */
+        grid-template-areas: 
+        "header header"
+        "navigation navigation"
+        "sidebar main"
+        "ads footer";
+    }
+}
   
 
 @media screen and (max-width: 768px) {
-    header {
-        height: 60px;
-    }
-    .side-menu {
-        visibility: hidden;
+    body {
+        display: block;
     }
     .menu-button {
         display: block;
     }
     .topmenu {
         width: 100%;
+    }
+/*     .topmenu {
+        width: 100%;
         margin-top: 20px;
         visibility: hidden;
-    }
-    .topmenu > ul {
+    } */
+/*     .topmenu > ul {
         width: 100%;
         height: 90vh;
         display: flex;
@@ -228,5 +262,5 @@ footer {
     }
     main {
         margin: 1%;
-    }
+    } */
 }

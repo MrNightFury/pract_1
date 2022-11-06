@@ -6,8 +6,8 @@
         <meta name = "viewport" content = "wight=device-wight, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/footer.css">
-        <link rel="stylesheet" href="css/form.css">
         <link rel="stylesheet" href="css/share.css">
+        <link rel="stylesheet" href="css/like.css">
         <link rel="icon" type="image/png" href="images/icon.png">
         <title>Сборник стихов</title>
     </head>
@@ -37,38 +37,13 @@
             </ul>
         </nav>
 
-        <main>
-            <p class="form-title">Contact</p>
-            <form id="contact-form">
-                <div id="name">
-                    <input type="text" id="name" required>
-                    <span class="label">Имя</span>
-                    <span class="line"></span>
-                </div>
-                <div id="surname">
-                    <input type="text" id="surname" required>
-                    <span class="label">Фамилия</span>
-                    <span class="line"></span>
-                </div>
-                <div id="mail">
-                    <input type="email" id="mail" required>
-                    <span class="label">Почта</span>
-                    <span class="line"></span>
-                </div>
-                <div id="tel">
-                    <input type="tel" id="tel" required>
-                    <span class="label">Телефон</span>
-                    <span class="line"></span>
-                </div>
-                <div id="message">
-                    <textarea id="message" required></textarea>
-                    <span class="label">Напишите Ваше сообщение здесь</span>
-                    <span class="line"></span>
-                </div>
-                
-                <button type="submit" required>Отправить</button>
-            </form>
-            
+        <main style="display: flex; padding: 20px;">
+            <button id="login">Логин (задание 1)</button>
+            <button id="admin">Админ (задание 2)</button>
+            <button id="like" style="background-color: white">Like (задание 3)</button>
+            <button id="clone" style="color: black;">Логин (задание 4)</button>
+            <ul id="heart-container"></ul>
+            <script src="js/pr1.js"></script>
         </main>
         
         <footer>

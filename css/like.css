@@ -1,0 +1,16 @@
+#like {
+    padding: .5em;
+    border-radius: 2em;
+    border: none;
+}
+#heart-container {
+    position: absolute;
+}
+#heart-container > img {
+    position: fixed;
+}
+.heart {
+    pointer-events: none;
+    height: 2em;
+    width: 2em;
+}

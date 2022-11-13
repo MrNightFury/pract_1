@@ -57,8 +57,7 @@ window.addEventListener('mousemove', (e) => {
         heart.classList.add("heart");
         heart.style.top = y + "px";
         heart.style.left = x + "px";
-        const container = document.querySelector('#heart-container');
-        container.appendChild(heart);
+        document.querySelector('#heart-container').appendChild(heart);
     }
 });
 

@@ -6,8 +6,8 @@
         <meta name = "viewport" content = "wight=device-wight, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/footer.css">
-        <link rel="stylesheet" href="css/form.css">
         <link rel="stylesheet" href="css/share.css">
+        <link rel="stylesheet" href="css/captcha.css">
         <link rel="icon" type="image/png" href="images/icon.png">
         <title>Сборник стихов</title>
     </head>
@@ -38,38 +38,27 @@
             </ul>
         </nav>
 
-        <main>
-            <p class="form-title">Contact</p>
-            <form id="contact-form">
-                <div id="name">
-                    <input type="text" id="name" required>
-                    <span class="label">Имя</span>
-                    <span class="line"></span>
-                </div>
-                <div id="surname">
-                    <input type="text" id="surname" required>
-                    <span class="label">Фамилия</span>
-                    <span class="line"></span>
-                </div>
-                <div id="mail">
-                    <input type="email" id="mail" required>
-                    <span class="label">Почта</span>
-                    <span class="line"></span>
-                </div>
-                <div id="tel">
-                    <input type="tel" id="tel" required>
-                    <span class="label">Телефон</span>
-                    <span class="line"></span>
-                </div>
-                <div id="message">
-                    <textarea id="message" required></textarea>
-                    <span class="label">Напишите Ваше сообщение здесь</span>
-                    <span class="line"></span>
-                </div>
-                
+        <main style="padding: 20px;">
+
+            <form class="form">
+                <span>Введите</span>
+                <input type="text" required>
+                <label for="captcha">
+                    Капча
+                    <input type="checkbox" id="captcha" required></button>
+                </label>
                 <button type="submit" required>Отправить</button>
             </form>
+
+            <div class="cart">
+                <p id="sum">Сумма: </p>
+                <button id="initialize">Инициализировать</button>
+                <button id="add">Добавить</button>
+            </div>
             
+            <button id="trunc">Транкейт</button>
+            
+            <script src="js/pr2.js"></script>
         </main>
         
         <footer>

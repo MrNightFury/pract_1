@@ -1,0 +1,11 @@
+main {
+    justify-content: space-around;
+}
+
+.form,
+.cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+

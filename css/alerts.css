@@ -1,4 +1,4 @@
-.alert-container {
+#alert-container {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -10,19 +10,19 @@
     width: 3.5em;
     transition: height .5s .25s, width .25s;
 }
-.alert-bell {
+#alert-bell {
     content: ' ';
     width: 2.5em;
     height: 2.5em;
     margin: .5em;
 }
-.alert-head {
+#alert-head {
     width: 100%;
     height: 3.5em;
     background-color: wheat;
     border-radius: 1.75em;
 }
-.alert-count {
+#alert-count {
     margin: 0;
     position: absolute;
     top: -.3em;
@@ -35,10 +35,10 @@
     color: white;
 }
 
-.alert-list {
+#alert-list {
     display:none;
     flex-direction: column;
-    overflow: hidden;
+    overflow-y: scroll;
     height: 82%;
     background-color: white;
     list-style: none;
@@ -46,38 +46,45 @@
     margin: 0;
     border-radius: 0 0 1.75em 1.75em;
 }
-.alert-list > li {
+#alert-list > li {
     margin: .0em 0 0 0;
     overflow-wrap: break-word;
     padding: .75em 0 .75em 0;
 }
-.alert-list > li::before {
+#alert-list > li::before {
     content: counter(list-item);
     margin: 1em;
     padding: .5em .8em;
     background-color: wheat;
     border-radius: 2em;
 }
-.alert-list > li:first-child {
+#alert-list > li:first-child {
     margin-top: .5em;
 }
 
-.alert-container:hover > .alert-head {
+#alert-container:hover > #alert-head {
     border-radius: 1.75em 1.75em 0 0;
 }
-.alert-container:hover {
+#alert-container:hover {
     width: 15em;
     height: 20em;
 }
-.alert-container:hover > ul {
+#alert-container:hover > ul {
     display: flex;
 }
 
-.alert-list > li:hover {
+#alert-list > li:hover {
     border-radius: 1em;
     background-color: wheat;
     transform: scale(1.1);
 }
-.alert-list > li:hover::before {
+#alert-list > li:hover::before {
     background-color: white;
+}
+#alert-list::-webkit-scrollbar {
+    width: 0px;
+}
+#alert-head > button {
+    background: transparent;
+    border: none;
 }

@@ -76,7 +76,7 @@
 #alert-list > li:hover {
     border-radius: 1em;
     background-color: wheat;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 #alert-list > li:hover::before {
     background-color: white;
@@ -87,4 +87,42 @@
 #alert-head > button {
     background: transparent;
     border: none;
+}
+
+
+#notification-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 4em;
+    right: -1em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 11em;
+    transition: 0.5s;
+}
+.notification {
+    background: wheat;
+    border-radius: 0.5em;
+    opacity: 0;
+    transition: .5s;
+    margin: 0.5em;
+}
+.notification > p {
+    margin: 0.5em;
+}
+
+.notification-shown {
+    opacity: 1;
+}
+#alert-container:hover > #notification-container {
+    opacity: 0;
+}
+
+.del {
+    float: right;
+    background: none;
+    border: none;
+    margin-right: 1em;;
 }

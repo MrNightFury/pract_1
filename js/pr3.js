@@ -59,10 +59,14 @@ function getRange (items, min, max) {
     let arr = [];
     for (let item of itemList) {
         if (item.price >= min && item.price <= max) {
-            arr.push (item.price);
+            arr.push (item);
         }
     }
-    alert (arr);
+    let str = "";
+    arr.forEach(element => {
+        str += "[" + element.name + " - " + element.price + "] ";
+    });
+    alert (str);
 }
 
 function compareItems (a, b) {
@@ -86,11 +90,11 @@ function addAlert (text) {
     document.getElementById('alert-count').innerHTML++;
 }
 
-var alertAddInterval = setInterval(addAlert, 3000);
+var alertAddInterval = setInterval(addAlert, 3000, "text");
 
 a.onclick = function () {
     clearInterval (alertAddInterval);
     setTimeout (() => {
-        alertAddInterval = setInterval(addAlert, 3000);
+        alertAddInterval = setInterval(addAlert, 3000, "text");
     }, 10000)
 }

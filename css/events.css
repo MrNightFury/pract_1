@@ -1,0 +1,82 @@
+#gallery {
+    position: relative;
+}
+
+#gallery-current {
+    width: 73vw;
+}
+
+#miniatures > img{
+    width: 14.3vw;
+}
+
+#gallery-new {
+    position: absolute;
+    left: 0;
+    width: 73vw;
+    transition: 1s;
+    opacity: 0;
+}
+
+#files > li {
+    width: fit-content;
+}
+.selected {
+    background: wheat;
+}
+
+#slider {
+    position: relative;
+    height: 2.5vw;
+    background: lightgray;
+}
+#line {
+    position: relative;
+    display: inline-block;
+    height: .5vw;
+    width: 70vw;
+    margin: 1vw 1.5vw;
+    background: gray;
+}
+#cursor {
+    display: inline-block;
+    position: absolute;
+    left: 2vw;
+    top: -.75vw;
+    height: 2vw;
+    width: 1vw;
+    background: blue;
+}
+
+div:has(> #market) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.moving {
+    position: fixed;
+/*     opacity: .5; */
+}
+
+#cart {
+    background: lightgray;
+}
+
+
+#ship-container {
+    position: relative;
+}
+#ship {
+    position: relative;
+    left: 90%;
+    width: 10vw;
+}
+
+#random-ship-container {
+    position: relative;
+}
+#random-ship {
+    position: relative;
+    left: 90%;
+    width: 10vw;
+}

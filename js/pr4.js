@@ -58,9 +58,21 @@ alertList.addEventListener ("click", e => {
     }
 })
 
+let cent = document.getElementById("centered");
+document.body.addEventListener ("click", e => {
+    if (e.ctrlKey) {
+        alert ("X: " + e.clientX + "\nY: " + e.clientY);
+    }
+})
 function res(){
-    cent = document.getElementById("centered");
     cent.style.marginLeft = ((window.innerWidth - cent.clientWidth) / 2).toString()+"px";
     cent.style.marginTop = ((window.innerHeight - cent.clientHeight) / 2).toString()+"px";
 }
 setInterval(res, 100);
+
+window.addEventListener ("mouseup", e => {
+    if (e.button == 3) {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+    }
+})

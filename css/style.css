@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template-columns: 10% 1fr 10%;
+    grid-template-columns: 10vw 1fr 10vw;
     grid-template-rows: 4em auto auto auto;
     grid-template-areas: 
         "header header header"

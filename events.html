@@ -5,9 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name = "viewport" content = "widht=device-wight, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/alerts.css">
         <link rel="stylesheet" href="css/share.css">
-        <link rel="stylesheet" href="css/cart.css">
+        <link rel="stylesheet" href="css/events.css">
         <link rel="icon" type="image/png" href="images/icons/icon.png">
         <title>Сборник стихов</title>
     </head>
@@ -20,18 +19,6 @@
                 <div class="menu-button"></div>
             </label>
         </header>
-
-        <aside id="alert-container">
-            <div id="alert-head">
-                <button id="a"><img id="alert-bell" src="images/icons/bell.png"></button>
-                <p id="alert-count">0</p>
-            </div>
-            <ul id="alert-list">
-
-            </ul>
-            <ul id="notification-container"></ul>
-
-        </aside>
 
         <nav class="topmenu">
                 <ul>
@@ -53,32 +40,89 @@
 
         <div class="ads">Текст</div>
 
-        <main>
-            <div>
+        <main style="flex-direction: column">
+            <div id="contents">
                 <h3>Ссылки</h3>
                 <ul>
                     <li><a href="https://ya.ru">https://ya.ru</a></li>
                     <li><a href="./admin.html">./admin.html</a></li>
-                    <li><a href="https://terraria.fandom.com/ru/wiki/Гриборанг">https://terraria.fandom.com/ru/wiki/Гриборанг</a></li>
+                    <li><a href="https://terraria.fandom.com/ru/wiki/Гриборанг"><i>https://terraria.fandom.com/ru/wiki/Гриборанг</i></a></li>
                     <li><a href="https://mail.yandex.ru/">https://mail.yandex.ru/</a></li>
                     <li><a href="localhost/index.html">localhost/index.html</a></li>
                 </ul>
             </div>
+
+            <div id="gallery">
+                <h3>Галлерея</h3>
+                <img id="gallery-current" src="images/wallpapers/w (1).jpg">
+                <img id="gallery-new" src="images/wallpapers/w (1).jpg">
+                <div id="miniatures">
+                    <img src="images/wallpapers/w (1).jpg">
+                    <img src="images/wallpapers/w (2).jpg">
+                    <img src="images/wallpapers/w (3).jpg">
+                    <img src="images/wallpapers/w (4).jpg">
+                    <img src="images/wallpapers/w (5).jpg">
+                </div>
+            </div>
             
-            <div class="list-container">
-                <h3>Список</h3>
-                <ul id="list"></ul>   
-                <button id="list-button">Добавить</button>
+            <div>
+                <h3>Файлы</h3>
+                <ul id="files">
+                    <li>Один</li>
+                    <li>Два</li>
+                    <li>Три</li>
+                    <li>Четыре</li>
+                    <li>Пять</li>
+                    <li>Шесть</li>
+                    <li>Семь</li>
+                    <li>Восемь</li>
+                    <li>Девять</li>
+                    <li>Десять</li>
+                </ul>
             </div>
 
             <div>
-                <h3>Уведомление</h3>
-                <button id="show-alert">Показать</button>
-            </div> 
+                <h3>Слайдер</h3>
+                <div id="slider">
+                    <span id="line">
+                        <span id="cursor"></span>
+                    </span>
+                </div>
+            </div>
 
-            <img src="images/5.jpg" width="200px" id="centered" style="position: fixed; left: 0; top: 0; z-index: 20">
+            <div>
+                <h3>Корзина</h3>
+                <div>
+                    <ul id="market">
+                        <li>100</li>
+                        <li>150</li>
+                        <li>110</li>
+                        <li>240</li>
+                        <li>180</li>
+                    </ul>
+                    <div id="cart">
+                        <ul id="cart-list">
+                            
+                        </ul>
+                        <p id="cost">Стоимость: 0</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div id="animation">
+                <h3>Анимация</h3>
+                <div id="ship-container">
+                    <img id="ship" src="images/ship.png">
+                </div>
+                <div id="random-ship-container">
+                    <img id="random-ship" src="images/ship.png">
+                </div>
+
+            </div>
             
-            <script src="js/pr4.js"></script>
+            
+            <script src="js/pr5.js"></script>
         </main>
         
         <footer>
